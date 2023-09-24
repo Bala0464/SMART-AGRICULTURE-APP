@@ -35,47 +35,30 @@ version = 0.1
 # version.regex = __version__ = ['"](.*)['"]
 # version.filename = %(source.dir)s/main.py
 
-# (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
-orientation = portrait
-
-# (bool) Fullscreen
-fullscreen = 0
-
-# (list) Permissions
-android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,CAMERA
-
-[buildozer]
-
-# (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
-#log_level = 1
-
-# (int) Target application architecture
-arch = armeabi-v7a
-
-# (str) Path to the android ndk for the current python-for-android release
-# android.ndk_path = /opt/android-ndk-r19c
-
-# (str) Android NDK version to use
-# android.ndk = 19c
-
-# (int) Android API to use
-# android.api = 28
-
-# (int) Minimum API required
-# android.minapi = 21
-
-# (int) Android SDK version to use
-# android.sdk = 20
-
-# (str) Android NDK directory (if empty, it will be automatically downloaded.)
-# android.ndk_path =
-
-# (str) Android SDK directory (if empty, it will be automatically downloaded.)
-# android.sdk_path =
-
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
 requirements = python3,kivy==2.1.0,kivymd==0.104.2,pillow==8.3.1,requests, numpy, opencv-python
+
+orientation = portrait
+
+# (list) Permissions
+android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE
+
+# (list) Application entry point
+# main python file
+android.entrypoint = main.py
+
+# (int) Target Android API, should be as high as possible.
+android.api = 30
+
+# (int) Minimum API your APK will support.
+android.minapi = 21
+
+# (int) Android SDK version to use
+android.sdk = 26
+
+# (str) Android NDK version to use
+android.ndk = 23.0.7599858
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -131,7 +114,7 @@ android.presplash_color = black
 #icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
 
 # (list) Permissions
-#android.permissions = INTERNET
+android.permissions = INTERNET
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
