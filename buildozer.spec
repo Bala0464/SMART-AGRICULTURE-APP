@@ -280,6 +280,9 @@ android.allow_backup = True
 # Usage example : android.manifest_placeholders = [myCustomUrl:\"org.kivy.customurl\"]
 # android.manifest_placeholders = [:]
 
+# (str) Path to the AIDL binary in the Android SDK
+android.aidl = /path/to/your/android/sdk/build-tools/30.0.3/aidl
+
 # (bool) disables the compilation of py to pyc/pyo files when packaging
 # android.no-compile-pyo = True
 
