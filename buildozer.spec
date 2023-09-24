@@ -47,7 +47,7 @@ android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,CAMERA
 [buildozer]
 
 # (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
-log_level = 2
+log_level = 1
 
 # (int) Target application architecture
 arch = armeabi-v7a
