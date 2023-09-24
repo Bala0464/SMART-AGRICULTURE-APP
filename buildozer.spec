@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = SmartAgricultureApp
+title = SampleApp
 
 # (str) Package name
-package.name = smart_agriculture_app
+package.name = Smart Agriculture App
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.novfensec
@@ -35,6 +35,44 @@ version = 0.1
 # version.regex = __version__ = ['"](.*)['"]
 # version.filename = %(source.dir)s/main.py
 
+# (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
+orientation = portrait
+
+# (bool) Fullscreen
+fullscreen = 0
+
+# (list) Permissions
+android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,CAMERA
+
+[buildozer]
+
+# (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
+log_level = 2
+
+# (int) Target application architecture
+arch = armeabi-v7a
+
+# (str) Path to the android ndk for the current python-for-android release
+# android.ndk_path = /opt/android-ndk-r19c
+
+# (str) Android NDK version to use
+# android.ndk = 19c
+
+# (int) Android API to use
+# android.api = 28
+
+# (int) Minimum API required
+# android.minapi = 21
+
+# (int) Android SDK version to use
+# android.sdk = 20
+
+# (str) Android NDK directory (if empty, it will be automatically downloaded.)
+# android.ndk_path =
+
+# (str) Android SDK directory (if empty, it will be automatically downloaded.)
+# android.sdk_path =
+
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
 requirements = python3,kivy==2.1.0,kivymd==0.104.2,pillow==8.3.1,requests, numpy, opencv-python
@@ -44,10 +82,10 @@ requirements = python3,kivy==2.1.0,kivymd==0.104.2,pillow==8.3.1,requests, numpy
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-presplash.filename = %(source.dir)s/images/logo.png
+presplash.filename = %(source.dir)s/logo.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/images/logo.png
+icon.filename = %(source.dir)s/logo.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
