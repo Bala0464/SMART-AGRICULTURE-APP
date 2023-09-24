@@ -37,28 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.1.0,kivymd==0.104.2,pillow==8.3.1,requests, numpy, opencv-python
-
-orientation = portrait
-
-# (list) Permissions
-android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE
-
-# (list) Application entry point
-# main python file
-android.entrypoint = main.py
-
-# (int) Target Android API, should be as high as possible.
-android.api = 30
-
-# (int) Minimum API your APK will support.
-android.minapi = 21
-
-# (int) Android SDK version to use
-android.sdk = 26
-
-# (str) Android NDK version to use
-android.ndk = 23.0.7599858
+requirements = python3,kivy==2.1.0,kivymd==0.104.2,pillow==8.3.1,numpy,opencv,os,array,requests,shutil
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -114,7 +93,7 @@ android.presplash_color = black
 #icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
 
 # (list) Permissions
-android.permissions = INTERNET
+#android.permissions = INTERNET
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
